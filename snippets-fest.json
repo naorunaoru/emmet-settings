@@ -39,8 +39,8 @@
       "fic|f:ic": "<fest:include context=\"${1:./data.json}\" src=\"${2:./template.xml}\"/>",
       "fis|f:is": "<fest:insert src=\"${1}\"/>",
 
-      "attrs+": "fas>fa",
-      "choose+": "fch>fwh+fo"
+      "fas+": "fas>fa",
+      "fch+": "fch>fwh+fo"
     }
   }
 }
