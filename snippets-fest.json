@@ -1,0 +1,46 @@
+{
+  "xml": {
+    "filters": "html",
+
+    "snippets": {
+      "fcd|f:cd": "<fest:cdata>\n\t<![CDATA[${1}]]>\n</fest:cdata>",
+      "fp|f:p": "<fest:params>\n\t{\n\t\t${1}\n\t}\n</fest:params>"
+    },
+
+    "abbreviations": {
+      "ftl|f:tl|ft|f:t": "<fest:template xmlns:fest=\"http://fest.mail.ru\">${1}</fest:template>",
+      "fvl|f:vl|fv|f:v": "<fest:value>${1}</fest:value>",
+      "fvl+|f:vl+|fv+|f:v+": "<fest:value output=\"${1}\">${2}</fest:value>",
+      "fvr|f:vr": "<fest:var name=\"${1}\">${2}</fest:var>",
+      "ftx|f:tx": "<fest:text>${1}</fest:text>",
+      "fsp|f:sp": "<fest:space />",
+      "fs|f:s": "<fest:set name=\"${1}\">${2}</fest:set>",
+      "fg|f:g": "<fest:get name=\"${1}\"/>",
+      "fgp|f:gp": "<fest:get name=\"${1}\">${2}</fest:get>",
+      "fes|f:es": "<fest:element select=\"${1}\"></fest:element>",
+      "fen|f:en": "<fest:element name=\"${1}\"></fest:element>",
+
+      "fas|f:as": "<fest:attributes>${1}</fest:attributes>",
+      "fa|f:a": "<fest:attribute name=\"${1}\" value=\"${2}\"/>",
+
+      "fea|f:ea": "<fest:each iterate=\"${1}\" index=\"${2:i}\" value=\"${3:v}\">${4}</fest:each>",
+      "ff|f:f": "<fest:for iterate=\"${1}\" index=\"${2:i}\" value=\"{3:v}\">",
+      "ffi|f:fi": "<fest:for from=\"${1:1}\" to=\"${2:5}\" index=\"${3:i}\">",
+      "fif|f:if": "<fest:if test=\"${1}\">${2}</fest:if>",
+
+      "fch|f:ch": "<fest:choose>${1}</fest:choose>",
+      "fwh|f:wh": "<fest:when test=\"${1}\">${2}</fest:when>",
+      "fo|f:o": "<fest:otherwise>${1}</fest:otherwise>",
+
+      "fc|f:c": "<fest:comment>${1}</fest:comment>",
+      "fdt|f:dt": "<fest:doctype>${1}</fest:doctype>",
+      "fs+|f:s+": "<fest:script>${1}</fest:script>",
+      "fs|f:s": "<fest:script src=\"${1}\"/>",
+      "fic|f:ic": "<fest:include context=\"${1:./data.json}\" src=\"${2:./template.xml}\"/>",
+      "fis|f:is": "<fest:insert src=\"${1}\"/>",
+
+      "attrs+": "fas>fa",
+      "choose+": "fch>fwh+fo"
+    }
+  }
+}
